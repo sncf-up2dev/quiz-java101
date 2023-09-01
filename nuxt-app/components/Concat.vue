@@ -13,7 +13,7 @@
         <Summary>
             <p>Les exercices de ce chapitre portent sur la précédence des opérateurs, ils démontrent, entre autres, les aspects suivants.</p>
             <ul>
-                <li>L'ordre de réalisation des opérateur.</li>
+                <li>L'ordre de réalisation des opérateurs.</li>
                 <li>La possibilité de changer cette ordre en regroupant les opérateur entre parenthèses.</li>
                 <li>L'opérateur de concaténation de chaînes caractères.</li>
             </ul>
