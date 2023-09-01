@@ -12,5 +12,13 @@
         <iframe src="https://www.jdoodle.com/iembed/v0/Lu8?stdin=0&args=0" scrolling="no"></iframe>
         <iframe src="https://www.jdoodle.com/iembed/v0/Lu9?stdin=0&args=0" scrolling="no"></iframe>
         <iframe src="https://www.jdoodle.com/iembed/v0/Lub?stdin=0&args=0" scrolling="no"></iframe>
+        <Summary>
+            <p>Les exercices de ce chapitre démontrent, entre autres, les aspects suivants.</p>
+            <ul>
+                <li>Le fonctionnement d'opérateur <code>instaceof</code> lorsque l'opérande est d'une valeur nulle.</li>
+                <li>La différence entre les variables locales et les champs en terme d'initialisation.</li>
+                <li>La porté des variables locales.</li>
+            </ul>
+        </Summary>
     </section>
 </template>
