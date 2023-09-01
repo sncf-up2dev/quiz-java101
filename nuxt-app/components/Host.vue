@@ -2,19 +2,17 @@
     <main>
         <h1>Quiz Rentrée - Java</h1>
         <header>
-            <NuxtLink :href="props.prev">Précédent</NuxtLink>
-            <NuxtLink v-if="!props.hideHome" href="/">Contenu</NuxtLink>
-            <NuxtLink :href="props.next">Suivant</NuxtLink>
+            <MenuBar :next="props.next" :prev="props.prev" :hide-home="props.hideHome"></MenuBar>
         </header>
         <slot></slot>
         <footer>
-          <NuxtLink :href="props.prev">Précédent</NuxtLink>
-          <NuxtLink v-if="!props.hideHome" href="/">Contenu</NuxtLink>
-          <NuxtLink :href="props.next">Suivant</NuxtLink>
+            <MenuBar :next="props.next" :prev="props.prev" :hide-home="props.hideHome"></MenuBar>
         </footer>
     </main>
 </template>
 <script setup lang="ts">
+
+import MenuBar from "~/components/MenuBar.vue";
 
 interface Props {
   next?: string;
