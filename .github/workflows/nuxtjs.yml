@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 env:
-  BASE_URL: quiz-java101
+  NUXT_APP_BASE_URL: /quiz-java101/
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
