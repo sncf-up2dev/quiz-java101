@@ -1,15 +1,33 @@
 <template>
     <section>
-        <h2>Concaténation</h2>
-        <p>Quels seront les résultats de l'execution du chaque des codes suivants, et pour quelles raisons&nbsp;?</p>
-        <ul>
-            <li>Erreur de compilation.</li>
-            <li>Erreur d'execution.</li>
-            <li>Succès.</li>
-        </ul>
-        <iframe src="https://www.jdoodle.com/iembed/v0/Lui?stdin=0&args=0" scrolling="no"></iframe>
-        <iframe src="https://www.jdoodle.com/iembed/v0/Luj?stdin=0&args=0" scrolling="no"></iframe>
-        <iframe src="https://www.jdoodle.com/iembed/v0/LwL?stdin=0&args=0" scrolling="no"></iframe>
+      <question title="Concaténation" />
+      <snippet><pre>
+public class MyClass {
+  public static void main(String args[]) {
+    Object o = new Object();
+    Integer i = 13;
+    String s = "Hello";
+
+    System.out.println(o + i + s);
+  }
+}</pre></snippet>
+      <snippet><pre>
+public class MyClass {
+  public static void main(String args[]) {
+    Object o = new Object();
+    Integer i = 13;
+    String s = "Hello";
+
+    System.out.println(o + (i + s));
+  }
+}</pre></snippet>
+      <snippet><pre>
+public class MyClass {
+  public static void main(String args[]) {
+    System.out.println(4 + 2 + " is a bad answer.");
+    System.out.println(4 + (2 + " is a good answer."));
+  }
+}</pre></snippet>
         <Summary>
             <p>Les exercices de ce chapitre portent sur la précédence des opérateurs, ils démontrent, entre autres, les aspects suivants.</p>
             <ul>
@@ -20,3 +38,7 @@
         </Summary>
     </section>
 </template>
+<script setup lang="ts">
+import Question from "~/components/Question.vue";
+import Snippet from "~/components/Snippet.vue";
+</script>

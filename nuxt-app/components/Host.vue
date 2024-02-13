@@ -1,6 +1,6 @@
 <template>
     <main>
-        <h1>Quiz Rentrée - Java</h1>
+        <h1>Quiz Java</h1>
         <header>
             <MenuBar :next="props.next" :prev="props.prev" :hide-home="props.hideHome"></MenuBar>
         </header>
@@ -23,3 +23,9 @@ interface Props {
 const props = defineProps<Props>();
 
 </script>
+
+<style scoped>
+footer {
+  padding-bottom: 40px;
+}
+</style>

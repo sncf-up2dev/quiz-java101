@@ -1,16 +1,30 @@
 <template>
     <section>
-        <h2>Bingo</h2>
-        <p>Quels seront les résultats de l'execution du chaque des codes suivants, et pour quelles raisons&nbsp;?</p>
-        <ul>
-            <li>Erreur de compilation.</li>
-            <li>Erreur d'execution.</li>
-            <li>Succès.</li>
-        </ul>
-        <p>Dans le cas de sccuès, quel sera l'affichae sur la sortie standard&nbsp;?</p>
-        <iframe src="https://www.jdoodle.com/iembed/v0/LwS?stdin=0&args=0" scrolling="no"></iframe>
-        <iframe src="https://www.jdoodle.com/iembed/v0/LwT?stdin=0&args=0" scrolling="no"></iframe>
-        <iframe src="https://www.jdoodle.com/iembed/v0/LwU?stdin=0&args=0" scrolling="no"></iframe>
+        <question title="Bingo" />
+        <snippet><pre>
+public class MyClass {
+  public static void main(String args[]) {
+  Boolean b = null;
+
+  System.out.println(b ? "Bingo" : "Oups");
+  }
+}</pre></snippet>
+        <snippet><pre>
+public class MyClass {
+  public static void main(String args[]) {
+    Boolean b = false;
+
+    System.out.println(b ? "Bingo" : "Oups");
+  }
+}</pre></snippet>
+        <snippet><pre>
+public class MyClass {
+  public static void main(String args[]) {
+    Boolean b = null;
+
+    System.out.println(Boolean.TRUE.equals(b) ? "Bingo" : "Oups");
+  }
+}</pre></snippet>
         <Summary>
             <p>Les exercices de ce chapitre portent sur les types d'emballage, notamment la classe <code>Boolean</code>.</p>
             <p>Ils démontrent, entre autres, les aspects suivants.</p>
@@ -21,3 +35,7 @@
         </Summary>
     </section>
 </template>
+<script setup lang="ts">
+import Question from "~/components/Question.vue";
+import Snippet from "~/components/Snippet.vue";
+</script>

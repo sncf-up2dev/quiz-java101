@@ -16,3 +16,10 @@ interface Props {
 const props = defineProps<Props>();
 
 </script>
+<style scoped>
+menu {
+  display: flex;
+  justify-content: space-between;
+}
+</style>
+

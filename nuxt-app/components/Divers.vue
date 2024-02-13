@@ -1,10 +1,20 @@
 <template>
     <section>
-        <h2>Divers</h2>
-        <p>Quels seront les résultats affichés sur la sortie standard suite à l'execution du chaque des codes
-            suivants&nbsp;?</p>
-        <iframe src="https://www.jdoodle.com/iembed/v0/Lro?stdin=0&args=0" scrolling="no"></iframe>
-        <iframe src="https://www.jdoodle.com/iembed/v0/Luk?stdin=0&args=0" scrolling="no"></iframe>
+        <question title="Divers" />
+          <snippet><pre>
+public class MyClass {
+  public static void main(String args[]) {
+
+    System.out.println(052);
+  }
+}</pre></snippet>
+          <snippet><pre>
+public class MyClass {
+  public static void main(String args[]) {
+
+    System.out.println(~13 + 1);
+  }
+}</pre></snippet>
         <Summary>
             <p>Les exercices de ce chapitre démontrent les aspects suivants.</p>
             <ul>
@@ -14,3 +24,7 @@
         </Summary>
     </section>
 </template>
+<script setup lang="ts">
+import Question from "~/components/Question.vue";
+import Snippet from "~/components/Snippet.vue";
+</script>

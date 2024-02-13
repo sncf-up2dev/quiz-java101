@@ -1,1 +1,0 @@
-import{_ as o,o as s,c as t,r as n,a as r}from"./entry.daae8c2a.js";const a={},c=r("summary",null,"Sommaire",-1);function _(e,l){return s(),t("details",null,[c,n(e.$slots,"default")])}const d=o(a,[["render",_]]);export{d as _};

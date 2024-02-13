@@ -4,9 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/style/main.css'],
   app: {
-    baseURL: "/quiz-rentree",
+    baseURL: process.env.BASE_URL,
     head: {
-      title: "Quiz rentrée - Java",
+      title: process.env.TITLE || "Quiz Java",
       link: [{
         rel: 'stylesheet',
         href: 'https://cdn.simplecss.org/simple.min.css'
