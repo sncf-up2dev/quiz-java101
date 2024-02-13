@@ -3,30 +3,30 @@
       <question title="Increment" />
       <snippet><pre>
 public class MyClass {
-    public static void main(String args[]) {
-      short x = 0;
-      x = x + 1;
+  public static void main(String args[]) {
+    short x = 0;
+    x = x + 1;
 
-      System.out.println("Value of x %d".formatted(x));
-    }
+    System.out.println("Value of x %d".formatted(x));
+  }
 }</pre></snippet>
       <snippet><pre>
 public class MyClass {
-    public static void main(String args[]) {
-      short x = 0;
-      x++;
+  public static void main(String args[]) {
+    short x = 0;
+    x++;
 
-      System.out.println("Value of x %d".formatted(x));
-    }
+    System.out.println("Value of x %d".formatted(x));
+  }
 }</pre></snippet>
       <snippet><pre>
 public class MyClass {
-    public static void main(String args[]) {
-      short x = 0;
+  public static void main(String args[]) {
+    short x = 0;
 
-      System.out.println("Value of x++ %d".formatted(x++));
-      System.out.println("Value of ++x %d".formatted(++x));
-    }
+    System.out.println("Value of x++ %d".formatted(x++));
+    System.out.println("Value of ++x %d".formatted(++x));
+  }
 }</pre></snippet>
         <Summary>
             <p>Les exercices de ce chapitre portent sur les types primitifs ainis que certains opérateurs arithmétiques.</p>
